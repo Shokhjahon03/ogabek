@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/connect.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+
+                    <a href="/index.html" class="logo__title">
+                        <img class="navbar__img" src="./imgs/logos.avif" alt="img">
+                        <p>Kampyuter Xizmatlatlari</p>
+                    </a>
+
+                    <ul class="navbar__menu">
+                        <a class="navbar__menu__list" href="/index.html">
+                            <li>
+                                Home
+                            </li>
+                        </a>
+                        <a class="navbar__menu__list" href="/aboute.html">
+                            <li>
+                                About Us
+                            </li>
+                        </a>
+                        <a class="navbar__menu__list" href="/connect.html">
+                            <li>
+                                Connect
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="connect__hero">
+            <div class="connect__hero__box">
+                <h2>Kompyuter xizmatlari: tashkilotlar ro'yxati, ularning aloqalari, manzillari va telefon raqamlari
+                </h2>
+                <div class="connect__hero__box__item">
+                    <div class="connect__hero__box__item__one">
+                        <img style="border-radius: 10px;" src="./imgs/Screenshot 2023-12-17 223101.png" alt="img">
+                        <p>saytda 1 yildan kam</p>
+                        <p>Faoliyat turlari ></p>
+                    </div>
+                    <div class="connect__hero__box__item__two">
+                        <p>1."KOMPYUTER_111"</p>
+                        <a href="https://www.goldenpages.uz/uz/region/?Id=330">120100, O'zbekiston, Sirdaryo viloyati,
+                            Shahar: Guliston, Turkiston ko'chasi, 54</a>
+                    </div>
+                    <div class="connect__hero__box__item__tre">
+                        <button></button>
+                        <div
+                            style="width: 100%; height: 50px; display: flex; align-items: center; justify-content: space-evenly;">
+                            <i style="color: brown; font-size: 40px;" class='bx bxs-phone-call'></i>
+                            <a type="telefon" href="tel : (+998) 91-561-97-99">(+998) 91-561-97-99</a>
+                        </div>
+                        <div
+                            style="width: 100%; height: 50px; display: flex; align-items: center; justify-content: space-evenly;">
+                            <i style="color: brown; font-size: 40px;" class='bx bx-stopwatch'></i>
+                            <a href="https://www.goldenpages.uz/uz/company/?Id=10087#tab4">Dam olish</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+
+            <div class="links__wrapper">
+                <div class="links__item">
+
+                    <img src="./img/logos.avif" alt="" class="imgs">
+                    <div class="Iconswrapper__and__link">
+
+
+
+                        <i class="fa-brands fa-telegram"></i>
+                        <a href="https://t.me/Bekk_125" class="Footer__telegram__link">
+                            Telegram Orqali
+                        </a>
+                    </div>
+
+                    <div class="Iconswrapper__and__link">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        <a href="tel : +998 91 561 97 99">(+998) 91 561 97 99</a>
+                    </div>
+
+                </div>
+                <div class="center__wrapp">
+                    <h4>
+                        Foydali saytlar
+                    </h4>
+                    <div class="hrefs">
+                        <a href="https://kun.uz">Kun uz</a>
+                        <a href="https://daryo.uz">Daryo uz</a>
+                        <a href="https://www.xushnudbek.uz">Xushnudbek uz</a>
+                    </div>
+                </div>
+                <div class="form__wrapper">
+                    <form action="#" class="Output__inputs ">
+                        <label for="#">
+                            <input type="text" placeholder="First Name" name="YouName" id="FirstName" class="Inputs">
+                            <input type="text" placeholder="Last Name" name="LastName" id="LastName" class="Inputs">
+                            <input type="number" placeholder="dkhj" name="YouPhoneNumber" id="PhoneNumber"
+                                class="Inputs">
+                        </label>
+                        <button class="Submit__Btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var firstNameOptions = {
+                strings: ['First Name', 'Ismingizni kiriting'],
+                typeSpeed: 50,
+                showCursor: false,
+                startDelay: 500,
+                backDelay: 500,
+                backSpeed: 25,
+                onComplete: function (self) {
+                    setTimeout(function () {
+                        self.stop();
+                    }, 5000);
+                }
+            };
+
+            var lastNameOptions = {
+                strings: ['Last Name', 'Familyangizni kiriting'],
+                typeSpeed: 50,
+                showCursor: false,
+                startDelay: 500,
+                backDelay: 500,
+                backSpeed: 25,
+                onComplete: function (self) {
+                    setTimeout(function () {
+                        self.stop();
+                    }, 5000);
+                }
+            };
+
+            var typedFirstName = new Typed('#FirstName', firstNameOptions);
+            var typedLastName = new Typed('#LastName', lastNameOptions);
+        });
+    </script>
+</body>
+
+</html>

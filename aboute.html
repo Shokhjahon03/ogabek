@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <a href="/index.html" class="logo__title">
+                        <img class="navbar__img" src="./imgs/logos.avif" alt="img">
+                        <p>Kampyuter Xizmatlatlari</p>
+                    </a>
+                    <ul class="navbar__menu">
+                        <a class="navbar__menu__list" href="/index.html">
+                            <li>
+                                Home
+                            </li>
+                        </a>
+                        <a class="navbar__menu__list" href="/aboute.html">
+                            <li>
+                                About Us
+                            </li>
+                        </a>
+                        <a class="navbar__menu__list" href="/connect.html">
+                            <li>
+                                Connect
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="about__hero">
+            <div class="container">
+                <h2 class="about__hero__title">
+                    Kompyuter xizmatlari: aloqa ma'lumotlari bilan kompaniyalar va tashkilotlarning ma'lumotnomasi
+                    Ushbu sahifada O'zbekiston tashkilotlarining "Kompyuter xizmatlari" bo'limidagi eng to'liq ro'yxati
+                    to'plangan. Manzillar, mo'ljallar, telefon raqamlari, ishtar tibi, rasmiy saytlar va boshqa
+                    ma'lumotlarni bizning biznes katalogimizda topishingiz mumkin.
+
+                    Sizni qiziqtirgan tashkilot haqida batafsil ma'lumot olish uchun kompaniya sahifasiga o'tishingiz
+                    kerak
+                    - uning nomini yoki <a
+                        style="background-color: rgb(154, 239, 239); border-radius: 6px; color: rgb(230, 130, 8);"
+                        href="https://www.goldenpages.uz/uz/rubrics/?Id=3136">GO</a> tugmasini
+                    bosing.
+                    Telefon raqamlarini bilish uchun "Raqamni ko'rsatish" tugmasini bosing.
+                    Ijtimoiy tarmoqlar va rasmiy saytga havolalar kompaniya kartasining pastki o'ng qismida joylashgan.
+                    Mobil versiyada bu ma'lumot kompaniya sahifasida joylashgan.
+                    Kompaniya va tashkilotlar ro'yxati doimiy ravishda kengayib, yangi ma'lumotlar bilan to'ldirilib
+                    boriladi.
+
+                    Noaniqlik haqida xabar bermoqchimisiz? Bu haqda bizga
+                    (+998) 91-561-97-99 telefon orqali xabar bersangiz, minnatdor bo'lamiz. Bog'lanishda, iltimos,
+                    noto'g'ri
+                    sahifaga havolani taqdim eting va biz imkon qadar tezroq ma'lumotni yangilaymiz. Hamkorligingiz
+                    uchun
+                    oldindan rahmat!
+                </h2>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+
+            <div class="links__wrapper">
+                <div class="links__item">
+
+                    <img src="./img/logos.avif" alt="" class="imgs">
+                    <div class="Iconswrapper__and__link">
+
+
+
+                        <i class="fa-brands fa-telegram"></i>
+                        <a href="https://t.me/Bekk_125" class="Footer__telegram__link">
+                            Telegram Orqali
+                        </a>
+                    </div>
+
+                    <div class="Iconswrapper__and__link">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        <a href="tel : +998 91 561 97 99">(+998) 91 561 97 99</a>
+                    </div>
+
+                </div>
+                <div class="center__wrapp">
+                    <h4>
+                        Foydali saytlar
+                    </h4>
+                    <div class="hrefs">
+                        <a href="https://kun.uz">Kun uz</a>
+                        <a href="https://daryo.uz">Daryo uz</a>
+                        <a href="https://www.xushnudbek.uz">Xushnudbek uz</a>
+                    </div>
+                </div>
+                <div class="form__wrapper">
+                    <form action="#" class="Output__inputs ">
+                        <label for="#">
+                            <input type="text" placeholder="First Name" name="YouName" id="FirstName" class="Inputs">
+                            <input type="text" placeholder="Last Name" name="LastName" id="LastName" class="Inputs">
+                            <input type="number" placeholder="dkhj" name="YouPhoneNumber" id="PhoneNumber"
+                                class="Inputs">
+                        </label>
+                        <button class="Submit__Btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var firstNameOptions = {
+                strings: ['First Name', 'Ismingizni kiriting'],
+                typeSpeed: 50,
+                showCursor: false,
+                startDelay: 500,
+                backDelay: 500,
+                backSpeed: 25,
+                onComplete: function (self) {
+                    setTimeout(function () {
+                        self.stop();
+                    }, 5000);
+                }
+            };
+
+            var lastNameOptions = {
+                strings: ['Last Name', 'Familyangizni kiriting'],
+                typeSpeed: 50,
+                showCursor: false,
+                startDelay: 500,
+                backDelay: 500,
+                backSpeed: 25,
+                onComplete: function (self) {
+                    setTimeout(function () {
+                        self.stop();
+                    }, 5000);
+                }
+            };
+
+            var typedFirstName = new Typed('#FirstName', firstNameOptions);
+            var typedLastName = new Typed('#LastName', lastNameOptions);
+        });
+    </script>
+</body>
+
+</html>
